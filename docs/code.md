@@ -15,3 +15,6 @@ git commit -m "ava"
 git push
 
 ## Setup
+
+## Run
+uv run mcp-server-example.py
