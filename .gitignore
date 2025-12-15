@@ -1,4 +1,1 @@
 .venv
-.env
-.config/ava-agent/token.json
-.config/ava-agent/credentials.json
