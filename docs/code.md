@@ -1,5 +1,6 @@
 # Code
 
+cd src
 source .venv/bin/activate
 
 ## WSL

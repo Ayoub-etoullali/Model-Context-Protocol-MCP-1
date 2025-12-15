@@ -1,7 +1,7 @@
 [project]
 name = "agent-mcp-uv"
 version = "0.1.0"
-description = "Artificial Virtual Assistant (AVA)"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

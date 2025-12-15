@@ -1,5 +1,9 @@
 # Model Context Protocol (MCP)
-AI agents: build a customer MCP server to give any AI app access to a toolset for an Artificial Virtual Assistant (AVA).
+Fourth example in AI agents series. Here, I build a customer MCP server to give any AI app access to a toolset for an Artificial Virtual Assistant (AVA).
+
+**Links**
+- [Video](https://youtu.be/N3vHJcHBS-w)
+- [Blog](https://medium.com/data-science-collective/model-context-protocol-mcp-explained-ef5c33c5fe05)
 
 ## How to run this example
 
@@ -32,6 +36,7 @@ uv run mcp dev mcp-server-example.py
   }
 }
 ```
+
 
 ## Customizing AVA's Behavior
 

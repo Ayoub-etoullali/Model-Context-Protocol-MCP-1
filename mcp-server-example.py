@@ -13,7 +13,7 @@ mcp = FastMCP("AVA")
 @mcp.prompt()
 def ava(user_name: str, user_title: str) -> str:
     """Global instructions for Artificial Virutal Assistant (AVA)"""
-    with open("src/prompts/ava.md", "r") as file:
+    with open("prompts/ava.md", "r") as file:
         template = file.read()
     return template.format(user_name=user_name, user_title=user_title)
 
@@ -21,13 +21,13 @@ def ava(user_name: str, user_title: str) -> str:
 @mcp.resource("email-examples://3-way-intro")
 def write_3way_intro() -> str:
     """Example of a 3-way intro email"""
-    with open("src/email-examples/3-way-intro.md", "r") as file:
+    with open("email-examples/3-way-intro.md", "r") as file:
         return file.read()
 
 @mcp.resource("email-examples://call-follow-up")
 def write_call_followup() -> str:
     """Example of a call follow-up email"""
-    with open("src/email-examples/call-follow-up.md", "r") as file:
+    with open("email-examples/call-follow-up.md", "r") as file:
         return file.read()
 
 @mcp.resource("directory://all")
@@ -90,6 +90,7 @@ def write_email_draft(recipient_email: str, subject: str, body: str) -> dict:
         draft = None
 
     return draft
+
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
