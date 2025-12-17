@@ -1,5 +1,5 @@
 # Model Context Protocol (MCP)
-Fourth example in AI agents series. Here, I build a customer MCP server to give any AI app access to a toolset for an Artificial Virtual Assistant (AVA).
+build a customer MCP server to give any AI app access to a toolset for an Artificial Virtual Assistant (AVA).
 
 **Links**
 - [Video](https://youtu.be/N3vHJcHBS-w)
@@ -9,34 +9,14 @@ Fourth example in AI agents series. Here, I build a customer MCP server to give 
 
 1. Clone this repo
 2. [Install uv](https://docs.astral.sh/uv/getting-started/installation/) if you haven't already
-```
-# Mac/Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Windows
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
 3. Test the server in dev mode
 ```
 uv run mcp dev mcp-server-example.py
 ```
 4. Add server config to AI app (e.g. Claude Desktop or Cursor).
 ```
-{
-  "mcpServers": {
-    "AVA": {
-      "command": "/Users/shawhin/.local/bin/uv", # replace with global path to your uv installation
-      "args": [
-        "--directory",
-        "/Users/shawhin/Documents/_code/_stv/sandbox/ava-mcp/", # replace with global path to repo
-        "run",
-        "mcp-server-example.py"
-      ]
-    }
-  }
-}
 ```
-
 
 ## Customizing AVA's Behavior
 
