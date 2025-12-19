@@ -16,6 +16,20 @@ uv run mcp dev mcp-server-example.py
 ```
 4. Add server config to AI app (e.g. Claude Desktop or Cursor).
 ```
+{
+  "mcpServers": {
+    "AVA": {
+      "command": "wsl.exe",
+      "args": [
+        "/home/ayoub/.local/bin/uv",
+        "--directory",
+        "/home/ayoub/Personal/MCP/1/src",
+        "run",
+        "mcp-server-example.py"
+      ]
+    }
+  }
+}
 ```
 
 ## Customizing AVA's Behavior

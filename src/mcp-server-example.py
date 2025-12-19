@@ -1,5 +1,4 @@
 from mcp.server.fastmcp import FastMCP
-import csv
 from tools.gmail import get_gmail_service
 from googleapiclient.errors import HttpError
 import base64
@@ -90,7 +89,6 @@ def write_email_draft(recipient_email: str, subject: str, body: str) -> dict:
         draft = None
 
     return draft
-
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')

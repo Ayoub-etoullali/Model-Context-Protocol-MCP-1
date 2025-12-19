@@ -12,3 +12,8 @@ dependencies = [
     "openai-agents>=0.0.12",
     "python-dotenv>=1.0.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "test-project",
+]
